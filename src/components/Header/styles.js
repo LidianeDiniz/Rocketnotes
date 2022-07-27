@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import theme from "../../styles/theme";
+
 
 export const Container = styled.header`
 grid-area: header;

@@ -14,6 +14,7 @@ margin-bottom: 8px;
 border-radius: 10px;
 padding: 16px;
 
+
 &::placeholder{
     color: ${({ theme})=> theme.COLORS.GRAY_300};
 }
