@@ -17,7 +17,16 @@ const [data, setData] = useState(null)
 
 
   function handleBack (){
-    navigate("/")
+    navigate(-1)
+  }
+
+  async function handleRemove(){
+    const confirm = window.confirm("Deseja realmente remover esta nota?");
+
+    if(confirm){
+     await api.delete(`/notes/${params.id}`);
+     navigate(-1)
+    }
   }
 
   useEffect(() => {
@@ -38,7 +47,10 @@ const [data, setData] = useState(null)
     <main>
       <Content>
 
-    <ButtonText title="Excluir nota"/>
+    <ButtonText 
+    title="Excluir nota"
+    onClick={handleRemove}
+    />
 
     <h1>{data.title}</h1>
 
