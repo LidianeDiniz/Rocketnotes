@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
     "brand header"
     "menu search"
     "menu content"
-    "newnote content" ; 
+    "newnote content" ;
 
     background-color: ${({ theme })=> theme.COLORS.BACKGROUND_800} ;
     `;
@@ -70,14 +70,15 @@ import { Link } from 'react-router-dom';
     export const  NewNote  = styled(Link)`
      grid-area: newnote;
 
-     background-color: ${({ theme })=> theme.COLORS.BACKGROUND_900};
-     
+     background-color: ${({ theme })=> theme.COLORS.ORANGE};
+     color: ${({theme})=> theme.COLORS.BACKGROUND_900};
      display: flex;
      align-items: center;
      justify-content: center;
+     
 
 
      svg{
         margin-right: 8px;
      }
-    `;
+   `;

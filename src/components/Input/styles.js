@@ -8,7 +8,7 @@ align-items: center;
 
 background-color: ${({ theme })=> theme.COLORS.BACKGROUND_900};
 
-color: ${({ theme })=> theme.COLORS.BACKGROUND_300};
+color: ${({ theme })=> theme.COLORS.GRAY_300};
 
 margin-bottom: 8PX;
 border-radius: 10PX;

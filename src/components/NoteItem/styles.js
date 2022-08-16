@@ -4,7 +4,7 @@ export const Container = styled.div`
 display:flex;
 align-items: center;
 
-background_color: ${({ theme, isNew})=> isNew ? "transparente" : theme.COLORS.BACKGROUND_900 };
+background-color: ${({ theme, isNew})=> isNew ? "transparente" : theme.COLORS.BACKGROUND_900 };
 
 color: ${({ theme })=> theme.COLORS.GRAY_300 };
 
@@ -23,7 +23,7 @@ padding-right: 16px;
     color: ${({ theme })=> theme.COLORS.RED };
 }
 
-.button-delete {
+.button-add {
     color: ${({ theme })=> theme.COLORS.ORANGE};
 }
 
@@ -34,9 +34,11 @@ padding-right: 16px;
     padding: 12px;
 
     color: ${({ theme })=> theme.COLORS.WHITE };
+    background: transparent;
+    
     border: none;
 
-    &:: placeholder {
+    &::placeholder {
         color: ${({ theme })=> theme.COLORS.GRAY_300 };
     }
 
