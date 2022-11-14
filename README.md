@@ -78,7 +78,7 @@ $ cd + sua pasta + https://github.com/LidianeDiniz/API_Backend_Nodejs.git
 # Instale as dependências
 $ npm install
 
-# Execute as migration e seed
+# Execute as migration
 $ npm migrate
 
 
